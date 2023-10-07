@@ -37,7 +37,7 @@ class ViewController: UIViewController, CAAnimationDelegate {
             line.draw(inside: view)
             let right = line.createRightLine()
             let left = line.createLeftLine()
-            if right.length > 5.0 {
+            if right.length > 20.0 {
                 nextLevel.append(right)
                 nextLevel.append(left)
             }

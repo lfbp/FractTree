@@ -53,7 +53,7 @@ class TreeLine  {
     func createRightLine() -> TreeLine {
         let origin = self.end
         let length = self.length*0.8
-        let angle = self.angle - Double.pi/6
+        let angle = self.angle - Double.pi/12
         let line =  TreeLine(origin: origin, length: length, angle: angle)
         return line
     }
@@ -61,7 +61,7 @@ class TreeLine  {
     func createLeftLine() -> TreeLine {
         let origin = self.end
         let length = self.length*0.8
-        let angle = self.angle + Double.pi/6
+        let angle = self.angle + Double.pi/12
         let line =  TreeLine(origin: origin, length: length, angle: angle)
         return line
     }
